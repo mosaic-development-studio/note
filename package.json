@@ -1,0 +1,45 @@
+{
+  "name": "note-cli",
+  "version": "0.1.0",
+  "description": "play music from the command line",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext=.js .",
+    "test": "jest --no-cache . --passWithNoTests"
+  },
+  "precommit": [
+    "lint"
+  ],
+  "pre-push": [
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mskalandunas/note-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "music",
+    "audio",
+    "player",
+    "playlist"
+  ],
+  "author": "Mike Skalandunas <mskalandunas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mskalandunas/note-cli/issues"
+  },
+  "homepage": "https://github.com/mskalandunas/note-cli#readme",
+  "devDependencies": {
+    "eslint": "^5.11.0",
+    "eslint-config-mosaic": "^0.1.2",
+    "eslint-plugin-node": "^8.0.0",
+    "jest": "^23.6.0",
+    "pre-commit": "^1.2.2",
+    "pre-push": "^0.1.1"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "engineStrict": true
+}
